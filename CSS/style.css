@@ -1,7 +1,6 @@
 
 body {
     margin: 0;
-    min-width: 100vh;
     background: linear-gradient(to bottom,#2B2D42,#7209B7,#2B2D42);
     color: #F8F9FA;
 }
@@ -13,12 +12,12 @@ body {
 ○ Blanco Mente (#F8F9FA)
 */
 
-
-
+/* modificaciones del header D:*/
 header
 {
     background: linear-gradient(to right ,#7209B7,#4CC9F0);
-    border-color: #2B2D42;
+    padding: 22px 35px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.35);
   
 }
 
@@ -36,12 +35,17 @@ nav
     font-size: 24px;
     font-weight: bold;
 }
+
 ul
 {
     display: flex;
+    align-items: center;
+    gap: 15px;
     list-style: none;
-    gap: 30px;
+    margin: 0;
+    padding: 0;
 }
+
 a{
     color: #F8F9FA;
     text-decoration: none;
@@ -52,16 +56,302 @@ a:hover
 {
     background-color: #7209b7;
     color: #F8F9FA;
+    box-shadow: 0 0 10px #7209B7;
 }
-a.activo
+
+/* inicio de la pagina :) */
+section
 {
-    background-color: #4CC9f0;
+    text-align: center;
+    padding: 60px 20px;
+}
+section h1
+ {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+section p 
+{
+  font-size: 18px;
+}
+
+/*  PRODUCTOS DESTACADOS */
+
+
+
+.prod-dest 
+{
+    max-width: 950px;
+    margin: 20px auto 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+.prod-dest h2 
+{
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+/* TARJETAS */
+.prod-dest article {
+
+    display: inline-block;
+    vertical-align: top;
+    width: 250px;
+    background-color: rgba(58, 31, 79, 0.75);
+    color: #F8F9FA;
+    border: 1px solid rgba(76, 201, 240, 0.3);
+    border-radius: 15px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+/* IMAGEN */
+.prod-dest article img {
+
+    width: 100%;
+    height: 150px;
+    
+    border-radius: 10px;
+
+}
+
+/* NOMBRE */
+.prod-dest article h3 
+{
+
+    color: #4CC9F0;
+    font-size: 18px;
+    margin: 12px 0 8px;
+}
+/* TEXTO */
+.prod-dest article p 
+{
+    margin: 8px 0;
+}
+
+
+/* BOTÓN */
+.prod-dest article button 
+{
+
+    background-color: #7209B7;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    padding: 9px 15px;
+    cursor: pointer;
+
+}
+
+.prod-dest article button:hover 
+{
+    background-color: #4CC9F0;
+    color: #2B2D42;
+}
+/* EFECTO TARJETA */
+.prod-dest article:hover {
+
+    transform: translateY(-5px);
+    background-color: rgba(58, 31, 79, 0.9);
+    box-shadow: 0 7px 18px rgba(76, 201, 240, 0.3);
+}
+
+/* formulario de contacto*/
+#form-contacto 
+{
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #3A1F4F;
+    color: #F8F9FA;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* TÍTULOS / ETIQUETAS */
+
+#form-contacto label 
+{
+
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #F8F9FA;
+    font-weight: bold;
+}
+
+
+
+
+
+/* INPUTS Y MENSAJE */
+
+#form-contacto input,
+#form-contacto textarea 
+{
+
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 8px;
+    border: 2px solid #7209B7;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    color: #2B2D42;
+    font-size: 15px;
+
+}
+
+/* CAMPO MENSAJE */
+#form-contacto textarea {
+
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* CUANDO SE SELECCIONA UN CAMPO */
+
+#form-contacto input:focus,
+#form-contacto textarea:focus 
+{
+
+    outline: none;
+    border-color: #4CC9F0;
+    box-shadow: 0 0 8px rgba(76, 201, 240, 0.5);
+
+}
+
+/* MENSAJES DE VALIDACIÓN */
+#form-contacto p 
+{
+    min-height: 18px;
+    margin: 5px 0 15px;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+#form-contacto button {
+
+    display: block;
+    margin: 25px auto 5px;
+    padding: 12px 25px;
+    background-color: #7209B7;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-contacto button:hover {
+    background-color: #4CC9F0;
     color: #2B2D42;
 }
 
+/*productos*/
+.contenedor-principal {
 
-footer
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 30px;
+
+}
+
+.contenedor-principal h1 {
+
+    text-align: center;
+    color: #F8F9FA;
+    margin-bottom: 40px;
+
+}
+.grid-productos {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+
+}
+
+.producto {
+
+    background-color: #F8F9FA;
+    color: #2B2D42;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+
+.producto:hover {
+
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(76, 201, 240, 0.4);
+
+}
+
+.producto img {
+
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.producto h2 {
+
+    color: #2B2D42;
+    font-size: 20px;
+    margin: 15px 0 10px;
+
+}
+
+
+.producto p 
 {
+    color: #7209B7;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0 15px;
+
+}
+
+
+/*botton para añadir al carrito*/
+.producto button {
+
     background-color: #7209B7;
-    
+    color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    padding: 11px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.producto button:hover {
+    background-color: #4CC9F0;
+    color: #2B2D42;
+}
+
+footer {
+  background-color: #7209B7;
+  color: #F8F9FA;
+  text-align: center;
+  padding: 20px;
+
 }
