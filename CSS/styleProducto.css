@@ -1,0 +1,106 @@
+
+/* =========================
+
+   SECCIÓN PRODUCTOS
+
+   ========================= */
+
+
+
+#productos 
+{
+    padding: 50px 25px;
+}
+/*CONTENEDOR PRINCIPAL*/
+.contenedor-principal 
+{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contenedor-principal h1 
+{
+    text-align: center;
+    color: #F8F9FA;
+    font-size: 38px;
+    margin-bottom: 45px;
+}
+
+/*GRID DE PRODUCTOS */
+.grid-productos 
+{
+    display: grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+
+}
+/*TARJETA DEL PRODUCTO*/
+.tarjeta-producto 
+{
+    background-color: rgba(58, 31, 79, 0.90);
+    color: #F8F9FA;
+    border: 1px solid rgba(76, 201, 240, 0.35);
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow:0 8px 20px rgba(0, 0, 0, 0.35);
+    transition:
+        transform 0.3s,
+        box-shadow 0.3s,
+        border-color 0.3s;
+}
+
+
+/*EFECTO AL PASAR EL MOUSE*/
+.tarjeta-producto:hover 
+{
+    transform: translateY(-8px);
+    border-color: #4CC9F0;
+    box-shadow:0 12px 25px rgba(76, 201, 240, 0.30);
+}
+
+/*IMAGEN*/
+.tarjeta-producto img 
+{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+/*NOMBRE DEL PRODUCTO*/
+.tarjeta-producto h3 
+{
+    color: #4CC9F0;
+    font-size: 20px;
+    margin: 10px 0;
+}
+/* PRECIO*/
+.tarjeta-producto .precio 
+{
+    color: #F8F9FA;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 15px 0;
+}
+/*BOTÓN*/
+.tarjeta-producto button 
+{
+    background-color: #7209B7;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 9px;
+    padding: 11px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tarjeta-producto button:hover 
+{
+
+    background-color: #4CC9F0;
+    color: #2B2D42;
+    transform: scale(1.05);
+
+}

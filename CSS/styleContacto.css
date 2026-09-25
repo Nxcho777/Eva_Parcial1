@@ -1,0 +1,88 @@
+
+/* formulario de contacto*/
+#form-contacto 
+{
+    width: 90%;
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 35px;
+    background-color: #3A1F4F;
+    color: #F8F9FA;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* TÍTULOS / ETIQUETAS */
+
+#form-contacto label 
+{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #F8F9FA;
+    font-weight: bold;
+}
+/* INPUTS Y MENSAJE */
+
+#form-contacto input,
+#form-contacto textarea 
+{
+
+    display: block;
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 8px;
+    border: 2px solid #7209B7;
+    border-radius: 8px;
+    background-color: #F8F9FA;
+    color: #2B2D42;
+    font-size: 15px;
+
+}
+
+/* CAMPO MENSAJE */
+#form-contacto textarea {
+
+    min-height: 140px;
+    resize: vertical;
+}
+
+/* CUANDO SE SELECCIONA UN CAMPO */
+#form-contacto input:focus,
+#form-contacto textarea:focus 
+{
+
+    outline: none;
+    border-color: #4CC9F0;
+    box-shadow: 0 0 8px rgba(76, 201, 240, 0.5);
+
+}
+
+/* MENSAJES DE VALIDACIÓN */
+#form-contacto p 
+{
+    min-height: 18px;
+    margin: 5px 0 15px;
+    font-size: 14px;
+}
+
+/* BOTÓN */
+#form-contacto button {
+
+    display: block;
+    margin: 25px auto 5px;
+    padding: 12px 25px;
+    background-color: #7209B7;
+    color: #F8F9FA;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#form-contacto button:hover {
+    background-color: #4CC9F0;
+    color: #2B2D42;
+}
